@@ -20,7 +20,7 @@ player2 = 0
 
 print('\n\nR: Rock			 P:Paper			  S:Scissor')
 user = input()
-user.lower
+user.lower()
 
 python = random.choice(rps)
 if user == python:
