@@ -6,7 +6,7 @@ the computer.
 """
 
 # Ask the user their name and store it in a variable called name.
-name = input('Hello! What\'s your name?')
+name = input('Hello! What\'s your name?: ')
 print ('Okay ' + name + '! Let\'s play Rock, Paper, Scissors.')
 
 print('Rock breaks scissors, scissors beat paper, paper beats rock')
@@ -20,7 +20,7 @@ player2 = 0
 
 print('\n\nR: Rock			 P:Paper			  S:Scissor')
 user = input()
-user.lower
+user.lower()
 
 python = random.choice(rps)
 if user == python:
@@ -33,7 +33,7 @@ while player1 < 5 or player2 < 5:
     user = input('Enter your choice: ')
     
     #Here is the computer's selection is stored in the python variable
-    import random #Normally, we import modules at the begining of the script.
+    #Normally, we import modules at the begining of the script.
     python = random.choice(rps)
     
     #Compare the variables user and py in the if statement. 
@@ -73,6 +73,6 @@ while player1 < 5 or player2 < 5:
 # When someone has reached 5 points:
 if player2 == 5:
     print ('Python wins!')
-elif player1 == 5:
+else:
     print ('You win! Congrats!')
     
